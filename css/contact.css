@@ -1,0 +1,338 @@
+.container{
+width:900px;
+top:-1000px;
+ margin-left: 10%;
+padding-left: 15px;
+padding-right: 15px;
+position:absolute;
+z-index:1000;
+box-shadow:15px 0 15px 15px rgba(0, 0, 0, 0.5);
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+	box-shadow:9px 0 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+.col {
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+	box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.labox {
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    margin-bottom: 20px;
+    min-height: 20px;
+    padding: 19px;
+    box-sizing: border-box;
+	box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+
+fieldset {
+    border: 0 none;
+    margin: 0;
+    min-width: 0;
+}
+
+legend {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color -moz-use-text-color #e5e5e5;
+    border-image: none;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    color: #333;
+    display: block;
+    font-size: 21px;
+    margin-bottom: 20px;
+    padding: 0;
+    width: 100%;
+}
+
+.header {
+    color: #3276ff;
+    font-size: 35px;
+	font-weight:bolder;
+    padding: 10px;
+}
+.text-center {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    margin-left: -115px;
+    margin-right: 25px;
+	
+}
+
+input:focus{
+box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+.col-md-1 {
+    width: 8.33333%;
+	  float: left;
+}
+.col-md-offset-2 {
+    margin-left: 16.6667%;
+}
+
+i img {
+  float:left;
+}
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.col-md-12 {
+    float: left;
+	width:100%;
+}
+
+.col-md-8{
+    float: left;
+	width: 66.6667%;
+	 margin-bottom: 20px;
+}
+
+
+
+.form-control {
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555;
+    display: block;
+    font-size: 14px;
+    height: 34px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+}
+
+
+textarea.form-control {
+    height: auto;
+}
+
+textarea.form-control:focus{
+box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 1.33;
+    padding: 10px 16px;
+	background-color: #0064ff;
+    border-color: #357ebd;
+    color: #fff;
+	margin-left:-39%;
+}
+.btn:hover{
+background-color:#002bff;    
+}
+
+@media (max-width: 1485px) {
+
+.container{
+width:890px;
+ margin-left: 7%;
+
+}
+
+}
+
+
+@media (max-width: 1385px) {
+
+.container{
+width:840px;
+ margin-left: 7%;
+
+}
+
+
+
+}
+
+
+@media (max-width: 1300px) {
+
+.container{
+width:780px;
+ margin-left: 7%;
+
+}
+
+}
+
+
+
+@media (max-width: 1385px) {
+
+.container{
+width:700px;
+ margin-left: 7%;
+}
+
+}
+
+@media (max-width: 1125px) {
+
+.container{
+width:650px;
+ margin-left: 7%;
+
+}
+
+}
+
+@media (max-width: 1035px) {
+
+.container{
+width:600px;
+ margin-left: 5%;
+}
+
+}
+
+
+
+@media (max-width: 980px) {
+
+.container{
+width:550px;
+ margin-left: 7%;
+}
+
+}
+
+
+@media (max-width: 905px) {
+
+.container{
+width:500px;
+ margin-left: 7%;
+}
+
+}
+
+
+
+@media (max-width: 822px) {
+body{
+text-align:center;
+}
+
+.container{
+width:480px;
+top:13%;
+left:10%;
+}
+
+.header {
+    color: #3276ff;
+    font-size: 20px;
+	font-weight:bolder;
+    padding: 5px;
+}
+
+.form-group{
+ margin-left: -55px;
+}
+
+.form-control{
+height: calc(20px);
+}
+
+textarea.form-control {
+   height: calc(20px);
+}
+
+.labox{
+padding:0px;
+}
+
+.btn {
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1.33;
+    padding: 8px 13px;
+	background-color: #0064ff;
+    border-color: #357ebd;
+    color: #fff;
+	margin-left:-39%;
+}
+}
+
+@media (max-width: 730px) {
+  
+.container{
+width:450px;
+top:15%;
+left:10%;
+}
+
+.form-group {
+    margin-left: -50px;
+}
+
+.col-md-8 {
+    margin-bottom: 10px;
+}
+
+.labox{
+padding:0px;
+}
+
+}
+
+
+@media (max-width: 670px) {
+  
+.container{
+width:400px;
+top:15%;
+left:10%;
+}
+
+.labox{
+padding:0px;
+}
+
+.form-control{
+width: 90%;
+}
+
+}
+
+
+@media (max-width: 580px) {
+  
+.container{
+left:5%;
+}
+
+
+
+}

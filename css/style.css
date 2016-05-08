@@ -1,0 +1,1371 @@
+/*-------INDEX--------*/
+@font-face { font-family: gratis; src: url('gratis.ttf'); }
+
+
+body{
+margin:0;
+text-align:center;
+
+}
+
+.mobileWorks{
+display:none;
+}
+
+#finMessage{
+font-size:1.8em;
+font-weight:bold;
+color:green;
+}
+
+.mobile{
+   visibility: hidden;
+}
+
+#quotes {
+position:absolute;
+color:#FFF;
+
+text-align: center;
+top:15%;
+width:70%;
+z-index:1000;
+}
+
+#name{
+font-family: ‘Lucida Console’, Monaco, monospace italic;
+font-style:italic;
+font-size:2.9em;
+border-bottom-style:solid;
+padding-bottom:0.5em;
+}
+
+#prog{
+ font-family:gratis;
+font-size: 4.5em;
+letter-spacing: 0.2em;
+color:white;
+}
+
+#web{
+margin-top: -50px;
+font-family: gratis;
+font-size:3em;
+text-transform:uppercase;
+color:brown;
+}
+
+.bottom-btn{
+letter-spacing: 0.1em;
+display: inline-block;
+padding: 0.5em 0.9em;
+overflow: hidden;
+position: relative;
+text-transform: uppercase;
+border: 2px solid #FFF;
+color: #FFF;
+font-family:‘Lucida Console’ ;
+font-size: 1.4rem;
+margin-top:50px;
+border-radius:0px;
+transition-property: background,border-radius;
+transition-duration: 0.5s;
+transition-timing-function: linear;
+z-index:1000;
+}
+
+.bottom-btn a{
+text-decoration:none;
+color:white;
+}
+
+.bottom-btn:hover{
+background-color:brown;
+border-radius:50%;
+
+}
+
+#text{
+font-family: ‘Lucida Console’, Monaco, monospace italic;
+font-size:1.2em;
+color:white;
+}
+
+#background{
+position: fixed;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+background-size: cover;
+}
+
+#content{
+position:absolute;
+padding: 30px;
+background-color:#FFF;
+right:0;
+width:18%;
+height:100%;
+position:fixed;
+text-align:center;
+z-index:1000;
+
+}
+
+nav{
+
+margin-top:20%;
+margin-left:-10%;
+}
+
+nav ul{
+text-align:center;
+}
+
+nav a{
+padding:20px;
+color:#000000;
+ opacity: 0.7;
+text-transform:uppercase;
+text-decoration:none;
+display:block;
+font-weight:bold;
+font-family: "Lucinda Console", sans-serif;
+font-size: 0.9em;
+border-bottom: 1px solid;
+}
+
+nav li{
+    position: relative;
+    list-style-type: none;
+	
+}
+
+nav ul li a{
+-webkit-transition-duration: 1.5s;
+transition-duration: 1.5s;
+ -webkit-transition-property: width, box-shadow;
+-webkit-transition-timing-function: linear;
+transition-timing-function: linear;
+}
+
+nav ul li a:hover {
+    background: black;
+	width:75%;
+	color:white;
+	box-shadow: 9px 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+
+/*--------WORKS-----------*/
+
+#websites{ width:75%;margin-left:5%;margin-top:3%; position:absolute;z-index:1000;}
+
+.details{ margin:15px 20px; text-align:center;}	
+    	h4{ font:300 16px 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:160%; letter-spacing:0.15em; color:#fff; text-shadow:1px 1px 0 rgb(0,0,0); }
+		p{ font:300 12px 'Lucida Grande', Tahoma, Verdana, sans-serif; color:#aaa; text-shadow:1px 1px 0 rgb(0,0,0);}
+		a{ text-decoration:none; }
+
+.mosaic-block {
+	float:left;
+	position:relative;
+	overflow:hidden;
+	width:500px;
+	height:300px;
+	margin:8px;
+	background:#111 url(../images/progress.gif) no-repeat center center;
+	border:1px solid #fff;
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+}
+
+.mosaic-backdrop {
+		display:none;
+		position:relative;
+		top:0;
+		height:100%;
+		width:100%;
+		background:#111;
+	}
+	
+.textIntro{font-size:20px; color:white; }
+.me{font-size:12px;}
+	
+.mosaic-overlay {
+	display:none;
+	z-index:5;
+	position:absolute;
+	 margin-left: -250px;
+	width:100%;
+	height:100%;
+	background:#111;
+}
+	
+	
+.fade .mosaic-overlay {
+			opacity:0;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+			filter:alpha(opacity=00);
+			background:url(../images/bg-black.png);
+		}
+	
+
+	
+
+
+@media (max-width: 1480px) {	
+#websites{ margin-left:3%;}
+
+#background{
+ position:fixed;
+ z-index:1;
+background-size: cover; 
+right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto;
+}
+
+.mosaic-overlay {
+	display:none;
+	z-index:5;
+	position:absolute;
+	 margin-left: -250px;
+	width:100%;
+	height:100%;
+	background:#111;
+}
+
+}
+
+@media (max-width: 1400px) {	
+#websites{ margin-left:1.5%;}
+
+#background{
+ position:fixed;
+ z-index:1;
+background-size: cover; 
+right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto;
+}
+
+.mosaic-block {
+	float:left;
+	position:relative;
+	overflow:hidden;
+	width:450px;
+	height:260px;
+	margin:8px;
+	background:#111 url(../images/progress.gif) no-repeat center center;
+	border:1px solid #fff;
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+}
+
+.mosaic-backdrop img{
+
+    width:100%;
+	height:100%;
+}
+
+
+.details{ margin:15px 20px; text-align:center;}	
+    	h4{ font:300 14px 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:160%; letter-spacing:0.11em; color:#fff; text-shadow:1px 1px 0 rgb(0,0,0); }
+		p{ font:300 11px 'Lucida Grande', Tahoma, Verdana, sans-serif; color:#aaa; text-shadow:1px 1px 0 rgb(0,0,0);}
+		a{ text-decoration:none; }
+
+.mosaic-overlay {
+	display:none;
+	z-index:5;
+	position:absolute;
+	 margin-left: -225px;
+	width:100%;
+	height:100%;
+	background:#111;
+}
+
+}
+
+
+@media (max-width: 1300px) {	
+
+body{
+margin:0;
+background-color:white;
+}
+
+#background{
+ position:fixed;
+ z-index:1;
+background-size: cover; 
+right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto;
+}
+
+.mobile{
+   visibility: hidden;
+}
+
+#quotes {
+position:absolute;
+color:#FFF;
+
+text-align: center;
+top:15%;
+width:70%;
+z-index:1000;
+}
+
+#name{
+font-family: Lucida Console, Monaco, monospace italic;
+font-style:italic;
+font-size:2em;
+border-bottom-style:solid;
+padding-bottom:0.5em;
+}
+
+#prog{
+ font-family:gratis;
+font-size: 3.5em;
+letter-spacing: 0.1em;
+color:white;
+}
+
+#web{
+margin-top: -30px;
+font-family: gratis;
+font-size:2.6em;
+text-transform:uppercase;
+color:brown;
+}
+
+.bottom-btn{
+letter-spacing: 0.1em;
+display: inline-block;
+padding: 0.5em 0.9em;
+overflow: hidden;
+position: relative;
+text-transform: uppercase;
+border: 2px solid #FFF;
+color: #FFF;
+font-family:‘Lucida Console’ ;
+font-size: 1.4rem;
+margin-top:50px;
+border-radius:0px;
+transition-property: background,border-radius;
+transition-duration: 0.5s;
+transition-timing-function: linear;
+z-index:1000;
+}
+
+.bottom-btn a{
+text-decoration:none;
+color:white;
+}
+
+.bottom-btn:hover{
+background-color:brown;
+border-radius:50%;
+
+}
+
+#text{
+font-family: Lucida Console, Monaco, monospace italic;
+font-size:1em;
+color:white;
+}
+
+#background{
+ position:fixed;
+ z-index:1;
+background-size: cover; 
+right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto;
+}
+
+#content{
+position:absolute;
+padding: 30px;
+background-color:#FFF;
+right:0;
+width:18%;
+height:100%;
+position:fixed;
+text-align:center;
+z-index:1000;
+
+}
+
+nav{
+
+margin-top:20%;
+margin-left:-10%;
+}
+
+nav ul{
+text-align:center;
+}
+
+nav a{
+padding:20px;
+color:#000000;
+ opacity: 0.7;
+text-transform:uppercase;
+text-decoration:none;
+display:block;
+font-weight:bold;
+font-family: "Lucinda Console", sans-serif;
+font-size: 0.9em;
+border-bottom: 1px solid;
+}
+
+nav li{
+    position: relative;
+    list-style-type: none;
+	
+}
+
+/*--------WORKS-----------*/
+
+#websites{ width:75%; margin-left:4%;margin-top:5%; position:absolute;z-index:1000;}
+
+.details{ margin:15px 20px; text-align:center;}	
+    	h4{ font:300 12px 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:160%; letter-spacing:0.11em; color:#fff; text-shadow:1px 1px 0 rgb(0,0,0); }
+		p{ font:300 9px 'Lucida Grande', Tahoma, Verdana, sans-serif; color:#aaa; text-shadow:1px 1px 0 rgb(0,0,0);}
+		a{ text-decoration:none; }
+
+.mosaic-block {
+	float:left;
+	position:relative;
+	overflow:hidden;
+	width:390px;
+	height:200px;
+	margin:5px;
+	background:#111 url(../images/progress.gif) no-repeat center center;
+	border:1px solid #fff;
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+}
+
+.mosaic-backdrop {
+		display:none;
+		position:absolute;
+		top:0;
+		height:100%;
+		width:100%;
+		background:#111;
+	}
+	
+	
+.mosaic-backdrop img{
+
+    width:100%;
+	height:100%;
+}
+	
+.mosaic-overlay {
+	display:none;
+	z-index:5;
+	position:absolute;
+	margin-left:-195px;
+	width:100%;
+	height:100%;
+	background:#111;
+}
+	
+	
+.fade .mosaic-overlay {
+			opacity:0;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+			filter:alpha(opacity=00);
+			background:url(../images/bg-black.png);
+		}
+	
+}
+
+@media (max-width: 1149px) {
+
+#background{
+ position:fixed;
+ z-index:1;
+background-size: cover; 
+right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto;
+}	
+
+body{
+background-color:black;
+margin:0;
+height:150%;
+}
+
+#quotes {
+position:absolute;
+color:#FFF;
+text-align: center;
+top:15%;
+width:70%;
+z-index:1000;
+}
+
+#name{
+font-family: �Lucida Console�, Monaco, monospace italic;
+font-style:italic;
+font-size:1.8em;
+border-bottom-style:solid;
+padding-bottom:0.5em;
+}
+
+#prog{
+ font-family:gratis;
+font-size: 3.1em;
+letter-spacing: 0.1em;
+}
+
+#web{
+margin-top: -30px;
+font-family:gratis;
+font-size:2.4em;
+text-transform:uppercase;
+color:brown;
+}
+
+
+
+/*--------WORKS-----------*/
+
+#websites{
+top:6%;
+left:-2%;
+}
+
+.mosaic-block {
+	float:left;
+	position:relative;
+	overflow:hidden;
+	width:370px;
+	height:190px;
+	margin:4px;
+	background:#111 url(../images/progress.gif) no-repeat center center;
+	border:1px solid #fff;
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+}
+
+.mosaic-backdrop {
+		display:none;
+		position:absolute;
+		top:0;
+		height:100%;
+		width:100%;
+		background:#111;
+	}
+	
+.textIntro{font-size:13px; color:white; }
+.me{font-size:11px;}
+	
+.mosaic-backdrop img{
+
+    width:100%;
+	height:100%;
+}
+	
+.mosaic-overlay {
+	display:none;
+	z-index:5;
+	position:absolute;
+	margin-left:-185px;
+	width:100%;
+	height:100%;
+	background:#111;
+}
+	
+	
+.fade .mosaic-overlay {
+			opacity:0;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+			filter:alpha(opacity=00);
+			background:url(../images/bg-black.png);
+		}
+	
+}
+
+
+
+
+
+@media (max-width: 1037px) {	
+video{display:none;}
+body{
+background-color:black;
+margin:0;
+
+}
+
+.mobileWorks{
+display:none;
+}	
+
+#background{
+ position:fixed;
+ z-index:1;
+background-size: cover; 
+right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto;
+}
+
+
+#quotes {
+position:absolute;
+color:#FFF;
+text-align: center;
+top:15%;
+width:70%;
+z-index:1000;
+}
+
+#name{
+font-family: �Lucida Console�, Monaco, monospace italic;
+font-size:1.6em;
+border-bottom-style:solid;
+padding-bottom:0.5em;
+}
+
+#prog{
+ font-family:gratis;
+font-size: 2.9em;
+letter-spacing: 0.1em;
+}
+
+#web{
+margin-top: -30px;
+font-family: gratis;
+font-size:2.2em;
+text-transform:uppercase;
+color:brown;
+}
+
+/*--------WORKS-----------*/
+
+#websites{ width:75%; margin-left:14%;margin-top:5%; position:absolute;z-index:1000;}
+
+.details{ margin:15px 20px; text-align:center;}	
+    	h4{ font:300 12px 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:160%; letter-spacing:0.11em; color:#fff; text-shadow:1px 1px 0 rgb(0,0,0); }
+		p{ font:300 9px 'Lucida Grande', Tahoma, Verdana, sans-serif; color:#aaa; text-shadow:1px 1px 0 rgb(0,0,0);}
+		a{ text-decoration:none; }
+
+.mosaic-block {
+	float:left;
+	position:relative;
+	overflow:hidden;
+	width:390px;
+	height:200px;
+	margin:5px;
+	background:#111 url(../images/progress.gif) no-repeat center center;
+	border:1px solid #fff;
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+}
+
+.mosaic-backdrop {
+		display:none;
+		position:absolute;
+		top:0;
+		height:100%;
+		width:100%;
+		background:#111;
+	}
+	
+	
+.mosaic-backdrop img{
+
+    width:100%;
+	height:100%;
+}
+	
+.mosaic-overlay {
+	display:none;
+	z-index:5;
+	position:absolute;
+	margin-left:-195px;
+	width:100%;
+	height:100%;
+	background:#111;
+}
+	
+	
+.fade .mosaic-overlay {
+			opacity:0;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+			filter:alpha(opacity=00);
+			background:url(../images/bg-black.png);
+		}
+	
+}
+	
+}
+
+
+
+
+
+
+
+@media (max-width: 987px) {	
+video{display:none;}
+body{
+background-color:black;
+text-align:center;
+min-height:696px;
+}
+
+nav{
+display: none;
+}
+
+.mobileWorks{
+visibility:hidden;
+}	
+
+.mobile {
+    bottom:0px;
+	width:100%;
+   visibility: visible;
+    position:absolute;
+     margin-top: 10%;
+    padding: 5px;
+    background-color:white;
+	z-index:1000;
+}
+
+
+.mobile a{
+    display:block;
+    margin:15px;
+    padding:9px;
+    border:1px solid black;
+    background:url(images/mobile_link_arrow.png) no-repeat right center;
+    -moz-border-radius:12px;
+    -webkit-border-radius:12px;
+    border-radius:12px;
+    color:black;
+    text-transform:uppercase;
+    text-decoration:none;
+   
+    font-weight:bold;
+    font-size: .9em;
+}
+
+.mobile a:hover{
+    color:brown;
+	border:1px solid brown;
+	    -moz-border-radius:0px;
+    -webkit-border-radius:0px;
+    border-radius:0px;
+    
+}
+
+#background{
+ position:fixed;
+ z-index:1;
+background-size: cover; 
+right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto;
+}
+
+
+#quotes {
+margin-top: 5%;
+position: sticky;
+color:#FFF;
+text-align: center;
+left:10%;
+width:70%;
+z-index:1000;
+margin-left:auto;
+margin-right:auto;
+}
+
+#name{
+font-family: �Lucida Console�, Monaco, monospace italic;
+font-size:1.5em;
+border-bottom-style:solid;
+padding-bottom:0.5em;
+}
+
+#prog{
+ font-family:gratis;
+font-size: 2.7em;
+letter-spacing: 0.1em;
+}
+
+#web{
+margin-top: -30px;
+font-family: gratis;
+font-size:2.0em;
+text-transform:uppercase;
+color:brown;
+}
+
+#text{
+font-family: �Lucida Console�, Monaco, monospace italic;
+font-size:0.9em;
+}
+
+#content{
+background-color: white;
+    height: 0;
+    position: sticky;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+#contentInside {
+    width: 20%;
+}
+
+
+.bottom-btn {
+margin-top:5px;
+}
+}
+
+@media (max-width: 827px) {	
+video{display:none;}
+
+
+body{
+background-color:black;
+text-align:center;
+}
+
+nav{
+display: none;
+}
+
+.mobile {
+  bottom:0px;
+	width:100%;
+   visibility: visible;
+    position:absolute;
+     margin-top: 12%;
+    padding: 5px;
+    background-color:white;
+	z-index:1000;
+}
+
+
+.mobile a{
+    display:block;
+    margin:15px;
+    padding:9px;
+    border:1px solid black;
+    background:url(images/mobile_link_arrow.png) no-repeat right center;
+    -moz-border-radius:12px;
+    -webkit-border-radius:12px;
+    border-radius:12px;
+    color:black;
+    text-transform:uppercase;
+    text-decoration:none;
+   
+    font-weight:bold;
+    font-size: .9em;
+}
+
+.mobile a:hover{
+    color:brown;
+	border:1px solid brown;
+	    -moz-border-radius:0px;
+    -webkit-border-radius:0px;
+    border-radius:0px;
+    
+}
+	
+#quotes {
+margin-top: 5%;
+position: sticky;
+color:#FFF;
+text-align: center;
+left:10%;
+width:70%;
+z-index:1000;
+margin-left:auto;
+margin-right:auto;
+}
+
+#name{
+font-family: �Lucida Console�, Monaco, monospace italic;
+font-style:italic;
+font-size:1.4em;
+border-bottom-style:solid;
+padding-bottom:0.5em;
+z-index:1000;
+}
+
+#prog{
+ font-family:gratis;
+font-size: 2.2em;
+letter-spacing: 0em;
+z-index:1000;
+}
+
+#web{
+margin-top: -20px;
+font-family: gratis;
+font-size:1.4em;
+text-transform:uppercase;
+color:brown;
+z-index:1000;
+}	
+
+
+
+.bottom-btn{
+letter-spacing: 0em;
+display: inline-block;
+padding: 0.3em 0.4em;
+overflow: hidden;
+position: relative;
+text-transform: uppercase;
+border: 2px solid #FFF;
+color: #FFF;
+font-family:Lucida Console ;
+font-size: 1.1rem;
+margin-top:10px;
+border-radius:0px;
+transition-property: background,border-radius;
+transition-duration: 0.5s;
+transition-timing-function: linear;
+z-index:1000;
+}
+
+.bottom-btn a{
+text-decoration:none;
+color:white;
+}
+
+.bottom-btn:hover{
+background-color:brown;
+border-radius:50%;
+
+}
+
+#text{
+display:none;
+}
+
+
+#background{
+ position:fixed;
+ z-index:1;
+background-size: cover; 
+right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto;
+}
+
+
+#content{
+background-color: white;
+    height: 0;
+    position: sticky;
+    text-align: left;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+#contentInside {
+    width: 20%;
+}
+
+
+/* works  */
+#websites{margin-left:25%;}
+
+.mobileWorks {
+  bottom:0px;
+	width:100%;
+   visibility: visible;
+    position:fixed;
+     margin-top: 12%;
+    padding: 5px;
+    background-color:white;
+	z-index:1000;
+}
+
+
+.mobileWorks a{
+    display:block;
+    margin:15px;
+    padding:9px;
+    border:1px solid black;
+    background:url(images/mobile_link_arrow.png) no-repeat right center;
+    -moz-border-radius:12px;
+    -webkit-border-radius:12px;
+    border-radius:12px;
+    color:black;
+    text-transform:uppercase;
+    text-decoration:none;
+   
+    font-weight:bold;
+    font-size: .9em;
+}
+
+.mobileWorks a:hover{
+    color:brown;
+	border:1px solid brown;
+	    -moz-border-radius:0px;
+    -webkit-border-radius:0px;
+    border-radius:0px;
+    
+}
+	
+}	
+	
+@media (max-width: 660px) {	
+/* works */
+video{display:none;}
+body{background-color:black;}
+#websites{margin-left:20%;}
+
+
+}
+
+@media (max-width: 600px) {	
+video{display:none;}
+body{
+background-color:black;
+}
+
+nav{
+display: none;
+}
+.mobile {
+	width:100%;
+   visibility: visible;
+    position:absolute;
+    padding:0px 0px 0px 0px;
+    background-color:white;
+	z-index:1000;
+}
+
+
+.mobile a{
+    display:block;
+    margin:15px;
+    padding:9px;
+    border:1px solid black;
+    background:url(images/mobile_link_arrow.png) no-repeat right center;
+    -moz-border-radius:12px;
+    -webkit-border-radius:12px;
+    border-radius:12px;
+    color:black;
+    text-transform:uppercase;
+    text-decoration:none;
+   
+    font-weight:bold;
+    font-size: .9em;
+}
+
+.mobile a:hover{
+    color:brown;
+	border:1px solid brown;
+	    -moz-border-radius:0px;
+    -webkit-border-radius:0px;
+    border-radius:0px;
+    
+}
+
+#quotes {
+color:#FFF;
+margin-top:15%;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+z-index:1000;
+}
+
+
+#name{
+font-family: �Lucida Console�, Monaco, monospace italic;
+font-style:italic;
+font-size:1.3em;
+border-bottom-style:solid;
+padding-bottom:0.5em;
+z-index:1000;
+}
+
+#prog{
+ font-family:gratis;
+font-size: 2em;
+letter-spacing: 0em;
+z-index:1000;
+}
+
+#web{
+margin-top: -20px;
+font-family: gratis;
+font-size:1.3em;
+text-transform:uppercase;
+color:brown;
+z-index:1000;
+}	
+
+
+
+.bottom-btn{
+letter-spacing: 0em;
+display: inline-block;
+padding: 0.3em 0.4em;
+overflow: hidden;
+position: relative;
+text-transform: uppercase;
+border: 2px solid #FFF;
+color: #FFF;
+font-family:Lucida Console ;
+font-size: 1.1rem;
+margin-top:10px;
+border-radius:0px;
+transition-property: background,border-radius;
+transition-duration: 0.5s;
+transition-timing-function: linear;
+z-index:1000;
+}
+
+.bottom-btn a{
+text-decoration:none;
+color:white;
+}
+
+.bottom-btn:hover{
+background-color:brown;
+border-radius:50%;
+
+}
+
+#text{
+display:none;
+}
+
+
+#background{
+ position:fixed;
+ z-index:1;
+background-size: cover; 
+right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto;
+}
+
+#content{
+background-color: white;
+    height: 0;
+    position: sticky;
+    text-align: left;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+#contentInside {
+    width: 20%;
+}
+
+
+/* works */ 
+
+#websites{margin-left:15%;}
+	
+}
+
+@media (max-width: 500px) {	
+video{display:none;}
+body{
+background-color:black;
+}
+/* works */ 
+
+#websites{margin-left:10%;}
+
+}	
+
+@media (max-width: 450px) {	
+video{display:none;}
+body{
+background-color:black;
+}
+/* works */ 
+
+#websites{margin-left:5%;}
+
+}	
+
+@media (max-width: 400px) {	
+video{display:none;}
+body{
+background-color:black;
+text-align:center;
+}
+
+#quotes {
+color:#FFF;
+margin-top:15%;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+z-index:1000;
+}
+
+#name{
+font-family: �Lucida Console�, Monaco, monospace italic;
+font-style:italic;
+font-size:1.2em;
+border-bottom-style:solid;
+padding-bottom:0.3em;
+}
+
+#prog{
+ font-family:gratis;
+font-size: 1.8em;
+letter-spacing: 0em;
+}
+
+#web{
+margin-top: -20px;
+font-family: gratis;
+font-size:1.2em;
+text-transform:uppercase;
+color:brown;
+}	
+
+#content{
+background-color: white;
+    height: 0;
+    position: sticky;
+    text-align: left;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+#contentInside {
+    width: 25%;
+}
+
+/* works */ 
+
+#websites{margin-left:1%;}
+
+}
+
+
+
+@media (max-width: 280px) {
+video{display:none;}
+body{
+background-color:black;
+}
+#quotes {
+color:#FFF;
+margin-top:15%;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+z-index:1000;
+}
+
+#prog{font-size:1.4em;}
+#content{
+text-align:center;
+background-color:white;
+z-index:1000;
+height:0%;
+width:100%;
+
+}
+
+
+/*  works */
+
+.mobileWorks a{
+    display:block;
+    margin:7px;
+    padding:5px;
+    border:1px solid black;
+    background:url(images/mobile_link_arrow.png) no-repeat right center;
+    -moz-border-radius:12px;
+    -webkit-border-radius:12px;
+    border-radius:12px;
+    color:black;
+    text-transform:uppercase;
+    text-decoration:none;
+   
+    font-weight:bold;
+    font-size: .7em;
+}
+
+
+
+#websites{ width:80%; margin-left:auto;margin-right:auto; position:relative;z-index:1000;}
+
+.details{ margin:0px 0px; text-align:center;}	
+    	h4{ font:300 8px 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:160%; letter-spacing:0.13em; color:#fff; text-shadow:1px 1px 0 rgb(0,0,0); }
+		p{ font:300 6px 'Lucida Grande', Tahoma, Verdana, sans-serif; color:#aaa; text-shadow:1px 1px 0 rgb(0,0,0);}
+		a{ text-decoration:none; }
+
+.mosaic-block {
+	float:left;
+	position:relative;
+	overflow:hidden;
+	width:200px;
+	height:100px;
+	margin:1.5px;
+	background:#111 url(../images/progress.gif) no-repeat center center;
+	border:1px solid #fff;
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+}
+
+.mosaic-backdrop {
+		display:none;
+		position:absolute;
+		top:0;
+		height:100%;
+		width:100%;
+		background:#111;
+	}
+	
+	
+.mosaic-backdrop img{
+
+    width:100%;
+	height:100%;
+}
+	
+.mosaic-overlay {
+	display:none;
+	z-index:5;
+	position:absolute;
+	margin-left:-100px;
+	width:100%;
+	height:100%;
+	background:#111;
+}
+	
+	
+.fade .mosaic-overlay {
+			opacity:0;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+			filter:alpha(opacity=00);
+			background:url(../images/bg-black.png);
+		}
+	
+}
+
+
+	
+	
